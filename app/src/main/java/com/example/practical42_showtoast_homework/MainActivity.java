@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     CheckBox chocolate_syrup,orio_cookie_crumbles,crushed_nuts,sprinkles,cherries;
-
+    Button show_toast;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         crushed_nuts = findViewById(R.id.CrushedNuts_checkbox);
         cherries = findViewById(R.id.Cherries_checkbox);
         orio_cookie_crumbles = findViewById(R.id.OrioCookieCrumbles_checkbox);
-        Button show_toast = findViewById(R.id.button);
+        show_toast = findViewById(R.id.button);
         show_toast.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -47,7 +47,8 @@ public class MainActivity extends AppCompatActivity {
             });
 
     }
-    public void onCheckboxClicked(View view) {
+
+    public void onCheckBoxClicked(View view) {
         boolean checked = ((CheckBox) view).isChecked();
         String str="";
         // Check which checkbox was clicked
@@ -71,4 +72,5 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
 
     }
+
 }

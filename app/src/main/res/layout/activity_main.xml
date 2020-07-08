@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:onClick="@string/sprinkles"
+        android:onClick="onCheckBoxClicked"
         android:text="@string/sprinkles"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ChocolateSyrup_checkbox" />
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:onClick="@string/crushed_nuts"
+        android:onClick="onCheckBoxClicked"
         android:text="@string/crushed_nuts"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Sprinkles_checkbox" />
@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
-        android:onClick="@string/cherries"
+        android:onClick="onCheckBoxClicked"
         android:text="@string/cherries"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CrushedNuts_checkbox" />
@@ -46,7 +46,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="4dp"
-        android:onClick="@string/orio_cookie_crumbles"
+        android:onClick="onCheckBoxClicked"
         android:text="@string/orio_cookie_crumbles"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Cherries_checkbox" />
@@ -69,7 +69,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="50dp"
-        android:onClick="@string/chocolate_syrup"
+        android:onClick="onCheckBoxClicked"
         android:text="@string/chocolate_syrup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
